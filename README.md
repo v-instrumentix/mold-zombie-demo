@@ -5,10 +5,11 @@ Please use [Dockerfile](Dockerfile) that installs `gcc`, `cmake`, `make` and `mo
 
 Assuming Dockerfile in current directory, next steps are as follows:
 
-* Build and start container:
+* Build and start container:  
 `docker build -tt . ; docker run -it --rm t su -`
-* In container run wrapper script few times:
+* In container run wrapper script few times:  
 `bash /x/b`
+
 After each run new zombie process `ld.mold` will appear (sample output also pasted below).
 
 Tested with GCC 11, 12, 13 either with Ninja or Make.
